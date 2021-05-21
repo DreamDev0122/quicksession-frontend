@@ -1,0 +1,38 @@
+@import '../../../styles/variables.scss';
+
+.container {
+  padding: 20px 15px;
+  width: 100%;
+
+  button {
+    width: 100%;
+    background: transparent linear-gradient(180deg, #27272764 0%, #6E6E6EDD 100%) 0% 0% no-repeat padding-box;
+    border-radius: 34px;
+    opacity: 1;
+    height: 56px;
+    border: none;
+    color: white;
+    font-family: $fontRaleway;
+    font-size: 17px;
+    letter-spacing: 2px;
+    backdrop-filter: blur(3px);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:focus {
+      outline: 0;
+    }
+
+    .spinIcon {
+      margin-right: 5px;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-left: 8px;
+    }
+  }
+}

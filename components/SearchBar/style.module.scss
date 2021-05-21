@@ -1,0 +1,167 @@
+@import '../../styles/variables.scss';
+
+.container {
+
+  width: 55%;
+
+ box-sizing: border-box;
+  .mobContainer {
+    display: none;
+  }
+
+  .dskContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0 70px 0;
+    font-size: 15px;
+    font-family: $fontRaleway;
+    
+    flex-direction: row;
+    color: grey;
+    height: 40px;
+    opacity: 0.9;
+    column-count: 3;
+    column-gap: normal;
+    
+    p {
+      display: inline-block;
+      margin: 10px 0;
+      margin-left: 5px;
+      padding-right: 20px;
+    }
+   input{
+     display: inline-block;
+     height: 40px ;
+     padding-inline: 5px;
+     border: none;
+   }
+  
+    
+  }
+}
+.column {
+  display: flex;
+  flex: 40%;
+  padding-right: 10px;
+  height: 40px;
+  margin: 10px;
+
+  vertical-align: middle;
+  box-sizing: border-box;
+  min-width: 250px;
+  background: #ffffff;
+  max-width: 350px;
+  
+  p{
+    padding-left: 10px;
+  }
+  
+}
+
+.column1{
+  border-left: 0px;
+}
+@media only screen and (max-width: 1025px) {
+  .dskContainer {
+    flex-direction: column !important;
+    margin: 0px !important;
+    margin-bottom: 20px !important;
+    .column{
+      width: 250px !important;
+      margin: 4px;
+      display: none !important;
+    }
+    .column1 {
+      display: flex !important;
+    }
+  }
+
+  .mobContainer {
+    display: none !important;
+    margin-top: 90px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .searchingBarView {
+
+      margin-top: 14px;
+      display: flex;
+      flex-direction: row;
+      height: 50px;
+      align-items: center;
+
+      button {
+        height: 30px;
+        width: 200px;
+        background: black;
+        border-radius: 20px;
+        border: 0px;
+        margin-right: 10px;
+        color: white;
+        position: relative;
+        text-align: left;
+        padding-left: 15px;
+        &:focus {
+          outline: 0;
+       }
+
+        svg {
+          width: 1rem !important;
+          height: 1rem !important;
+          position: absolute;
+          right: 8px;
+          top: 7px;
+        }
+      }
+
+      div {
+
+        display: flex;
+        flex-direction: column;
+
+        p {
+          margin: 0px;
+          color: white;
+          font-size: 10px;
+          background: #308AB4;
+          padding: 2px 8px;
+          border-radius: 10px;
+          text-align: center;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .searchingMapView {
+
+
+      p {
+        color: white;
+        margin: 8px;
+        font-size: 14px;
+      }
+
+      div {
+        width: 100px;
+        height: 46px;
+        background: white;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.datePick {
+  width: 100%;
+}
+
+.selectDate {
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: "rgb(68 68 68 / 87%)";
+}

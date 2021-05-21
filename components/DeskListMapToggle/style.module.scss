@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.container {
+	display: flex;
+	margin-bottom: 10px;
+	.buttonView {
+		width: 95px;
+		cursor: pointer;
+		height: 28px;
+		background: #FFFFFF 0% 0% no-repeat padding-box;
+		border: 1px solid #DDDDDD;
+		border-radius: 4px;
+		opacity: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 10px;
+
+		p {
+			margin: 0px;
+			text-align: center;
+			font-size: 12px;
+		}
+	}
+
+
+	.active {
+		background: #318BB4 !important;
+		border: 1px solid #318BB4 !important;
+		color: white !important;
+
+	}
+}
+
+@media only screen and (max-width: 1025px) {
+	.container {
+		display: none;
+	}
+}

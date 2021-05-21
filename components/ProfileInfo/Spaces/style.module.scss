@@ -1,0 +1,32 @@
+@import '../../../styles/variables.scss';
+
+@mixin sameBack ($color: #FFF) {
+  background: transparent linear-gradient(180deg, #FFFFFF00 0%, #8080801A 100%) 0% 0% no-repeat padding-box;
+  border: 1px solid #FFFFFF12;
+  border-radius: 22px;
+  opacity: 1;
+  text-align: center;
+  color: $color;    
+  font-family: $fontRaleway;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 30px 40px 20px 40px;
+  font-family: $fontRaleway;
+
+  button {
+    @include sameBack();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}

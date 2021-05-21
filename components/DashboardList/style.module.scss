@@ -1,0 +1,148 @@
+@import '../../styles/variables.scss';
+
+.container {
+
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+    .firstDiv {
+
+      display: flex;
+      align-items: center;
+      width: 100%;
+      position: relative;
+  .imgContainer {
+    background: transparent url("/assets/imgs/others5.jpg") 0% 0% no-repeat padding-box;
+    opacity: 1;
+    height: 181px;
+    background-size: cover;
+    width: 363px;
+
+  }
+
+  .buttonDiv {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0px;
+    bottom: 12px;
+  }
+
+  .textContent {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    flex-direction: column;
+    color: white;
+    width: 60vw;
+    margin: 15px 0;
+    font-size: 15px;
+    font-family: $fontRaleway;
+
+    border-radius: 0px 50px 50px 0px;
+    opacity: 1;
+    padding: 10px 20px;
+    border-left: 0px;
+
+    h2 {
+      text-align: left;
+      margin: 0px;
+    }
+
+    .innerTextContent {
+      display: flex;
+    }
+
+    .type {
+      cursor: pointer;
+      text-align: center;
+      font-size: 12px;
+      padding-bottom: 3px;
+      border-bottom: 3px solid transparent;
+    }
+
+    .buttonStyle {
+      background: $colorSkyBack;
+      border: 1px solid #FFFFFF26;
+      color: white;
+      padding: 7px 7px;
+      border-radius: 15px;
+    }
+  }
+
+
+  .imgInnerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 181px;
+    flex-direction: column;
+
+    p {
+      text-transform: uppercase;
+      background: $colorBlack;
+      color: $colorWhite;
+      padding: 0px 4px;
+      border-radius: 16px;
+      margin-bottom: 5px;
+    }
+
+    div {
+      color: $colorWhite;
+    }
+  }
+
+
+}
+.bookContent {
+  font-size: 14px;
+  color: white;
+  background: #318BB4;
+  border-radius: 2px;
+  padding: 5px 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 10px;
+
+  p {
+    margin: 0px;
+  }
+}
+
+}
+
+
+  /* big landscape tablets, laptops, and desktops */
+  @media (min-width:1025px) {
+    .imgContainer {
+      width: 363px;
+      height: 181px;
+
+    }
+
+    .imgInnerDiv {
+      width: 363px;
+      height: 100%;
+    }  
+
+  }
+
+
+@media only screen and (max-width: 1025px) {
+
+  .imgContainer {
+    width: 100vw !important;
+
+  }
+  .textContent {
+    display: none !important;
+  }
+
+  .imgInnerDiv {
+    width: 281px;
+  }
+
+}

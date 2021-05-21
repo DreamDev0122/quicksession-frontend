@@ -1,0 +1,85 @@
+@import '../../styles/variables.scss';
+
+.container {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	padding: 0 4px 0 8px;
+	border-radius: 30px;
+	background-color: white;
+	cursor: pointer;
+
+	&.opend {
+		padding: 3px 8px;
+	}
+	
+	.wrapper {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		img {
+			border-radius: 50%;
+			width: 36px;
+			height: 34px;
+		}
+	}
+
+	.menuWrapper {
+		padding: 0 10px 10px 10px;
+		min-width: 150px;
+
+		a {
+			display: block;
+			color: $colorBlack;
+			margin: 4px 0;
+			font-weight: 500;
+
+			span {
+				i {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}   		
+
+
+@media only screen and (max-width: 1025px) {
+
+	.container {
+		position: absolute;
+		top: 20px;
+		right: 40px;
+		padding: 0 4px 0 8px;
+		border-radius: 30px;
+		background-color: white;
+		cursor: pointer;
+		z-index: 999;
+		color: white;
+		background-color: #171717;
+	
+		&.opend {
+			padding: 3px 8px;
+			border-radius: 0px !important;
+
+		}
+
+		.wrapper {
+			svg {
+				color: white;
+			}
+		}
+
+		.menuWrapper {
+			min-width: inherit;
+			a {
+				color: white;
+				margin: 4px 0;
+				/* font-weight: 500; */
+				font-size: 12px;
+			}
+		}
+	}
+		
+}

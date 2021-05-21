@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+
+
+.mapContainer {
+	width: 200px;
+	height: 200px;
+}
+
+.mobMapView {
+	display: none;
+}
+
+.deskMapView {
+	display: block;
+}
+
+.container {
+	.inline {
+		display: "inline";
+		vertical-align: "text-bottom";
+	  }
+	  .meta {
+		margin-bottom: "16px"
+	  }
+}
+
+@media only screen and (max-width: 1025px) {
+
+	.deskMapView {
+		display: none !important;
+	}
+	.container {
+		display: none;
+	}
+
+	.mobMapView {
+		display: block !important;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+	}
+}
+.mapView {
+	width: 50% !important;
+    height: inherit !important;
+}

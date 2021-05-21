@@ -1,0 +1,25 @@
+@import '../variables.scss';
+
+.container {
+  padding: 50px;
+  font-family: $fontRaleway;
+
+  h1 {
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 40px;
+
+    span {
+      color: $colorSky;
+      font-size: 56px;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+  }
+
+  .section{
+    padding: 20px 0 60px 0;
+  }
+}

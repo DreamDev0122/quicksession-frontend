@@ -1,0 +1,32 @@
+@import "~bootstrap/scss/bootstrap";
+@import './variables.scss';
+
+html,
+body {
+  min-height: 100vh;
+  padding: 10px;
+  overflow: hidden;
+  margin: 0;
+  background: transparent radial-gradient(closest-side at 50% 50%, #2F2F2F 0%, #232323 59%, #161616 100%) 0% 0% no-repeat padding-box;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  h1, h2, h3 {
+    text-align: center;
+  }
+
+  h4, h5, h6 {
+    color: white;
+  }
+}
+

@@ -1,0 +1,101 @@
+@import '../../styles/variables.scss';
+
+
+Button{
+    display: flex;
+}
+.dia{
+    width: 2000px;
+    padding-right: 40px;
+
+}
+.all{
+    width: 1000px;
+}
+.popup{
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.title{
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+  
+.title2{
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #308AB4;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 15px;
+}
+input{
+    top: 532px;
+left: 666px;
+width: 49px;
+height: 29px;
+text-align: left;
+padding-left: 70px;
+font: normal normal normal 25px/30px Helvetica Neue;
+
+color: #55595C;
+opacity: 1;
+}
+select{
+    background-color: skyblue;
+    padding: 5px 5px 5px 10px;
+
+}
+label{
+    font-size:20px;
+    color: skyblue;
+}
+.check{
+}
+.search{
+}
+
+
+.toolBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .section {
+        width: 49%;
+        .button {
+            width: 100%;
+            border: 1px solid #747474;
+
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.sortByOrder {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+
+    .sortByDiv {
+        width: 100%;
+        margin-bottom: 5px;
+        .button {
+            width: 100%;
+            border: 1px solid #747474;
+
+        }
+    }
+}

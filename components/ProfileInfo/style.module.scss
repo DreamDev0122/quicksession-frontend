@@ -1,0 +1,44 @@
+@import '../../styles/variables.scss';
+
+.container {
+  position: relative;  
+  width: 100%;
+  min-height: 300px;
+  border: 1px solid #FFFFFF21;
+  box-shadow: 12px 16px 32px #00000075;
+  background: #1A2930 0% 0% no-repeat padding-box;
+
+  .titleDiv {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $colorSkyBack 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF2F;
+    border-radius: 34px;
+    opacity: 1;
+    backdrop-filter: blur(30px);
+    width: 200px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fontRaleway;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 1px;
+    z-index: 10;
+  }
+
+  .bannerDiv {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/assets/imgs/others1.jpg');
+    box-shadow: 12px 16px 32px #00000075;
+    opacity: 0.63;
+    height: 60px;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+  }
+}

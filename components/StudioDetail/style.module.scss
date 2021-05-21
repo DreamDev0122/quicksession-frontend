@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+.container_top{
+    padding-top: 170px;
+    height: 100vh;
+    overflow: auto;
+}
+.img_size{
+    height: 100%;
+    width: 100%;
+}
+.main_div{
+    margin-left: 3%;
+}
+.div_align_center{
+    text-align: center;
+}
+
+.thumbContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: auto;
+
+    .thumbItem {
+        cursor: pointer;
+        margin: 8px;
+
+        img {
+            width: 50px;
+        }
+    }
+}
+
+.slideImg {
+    width: 100%;
+}

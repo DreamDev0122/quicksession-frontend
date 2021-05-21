@@ -1,0 +1,152 @@
+@import './globals.scss';
+
+.container {
+  padding: 5% 12%;
+
+    h1 {
+      color: $colorSky;
+      letter-spacing: 3px;
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    .p30 {
+      color: white;
+      letter-spacing: 5px;
+      font-size: 30px;
+      font-family: $fontRaleway;
+      text-align: center;
+      margin: 20px 0 85px 0;
+    }
+
+    .mt30 {
+      margin-top: 30px;
+    }
+  
+    .formWrapper {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .signUpForm {
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        width: 700px;
+        transform: translate(-50%);
+        box-shadow: 0px 15px 10px #000000EF;
+
+        .imgWrapper {
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+
+          .contentWrapper {
+            position: relative;
+            padding: 60px 20px 20px 20px;
+            z-index: 2;
+            
+            .centerAlign {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .socialIcon {
+                width: 38px;
+                height: 38px;
+                position: relative;
+                opacity: 1;
+              }
+    
+              .socialBottom {
+                background-color: #555555CC;
+                backdrop-filter: blur(3px);
+                width: 90px;
+                height: 15px;
+                margin-top: 10px;
+                border-radius: 16px;
+              }
+            }          
+          }
+
+          .backImg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.64;
+          }       
+        }
+      }
+
+      .imgBG {
+        width: 520px;
+        height: 440px;      
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.45;
+
+        &.left {
+          background-image: url('/assets/imgs/formBG2.png');
+        }
+
+        &.right {
+          background-image: url('/assets/imgs/formBG3.png');
+        }
+      }
+    }
+
+    .aroundAlign {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  .mobView {
+    display: none;
+
+}
+
+@include media-breakpoint-down(lg) {
+
+.container {
+    margin-top: 60px;
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .p30 {
+      font-size: 20px;
+    }
+  }
+
+  .imgWrapper {
+    height: calc(100vh - 250px) !important;
+    overflow: auto !important;
+  }
+
+  .signUpForm {
+    width: 120% !important;
+  }
+
+  .backImg {
+    display: none;
+  }
+  .imgBG {
+
+    &.left {
+      display: none;
+    }
+
+    &.right {
+      display: none;
+    }
+  }
+}

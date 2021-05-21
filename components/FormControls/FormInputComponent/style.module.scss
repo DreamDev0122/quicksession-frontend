@@ -1,0 +1,43 @@
+@import '../../../styles/variables.scss';
+
+.container {
+  padding: 20px 15px;
+  width: 100%;
+
+  input {
+    border-radius: 23px;
+    height: 50px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 200;
+    width: 100%;
+    background-color: #555555CC;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1.3px;
+    backdrop-filter: blur(3px);
+
+    &.redOut {
+      box-shadow: 0 0 5px 3px #ff3547;
+    }
+    
+    &.login {
+      border: 1px solid #FFFFFF36;
+      height: 60px;
+      opacity: 1;
+      font-size: 20px;
+      text-align: center;
+      letter-spacing: 1.5px;
+    }
+
+    &::placeholder {
+      color: white;
+      opacity: 1;
+    }
+    
+    &:focus {
+      outline: 0;
+    }
+  }
+}

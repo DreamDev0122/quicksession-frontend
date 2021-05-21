@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+
+/* smartphones, Android phones, landscape iPhone */
+@media only screen and (max-width: 1025px) {
+  .container {
+    display: none;
+  }
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #318BB4;
+    color: white;
+    width: 50%;
+    margin: 15px 0;
+    margin-top: 60px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: $fontRaleway;
+
+    .type {
+      text-align: center;
+      width: 32%;
+      padding: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      padding-bottom: 3px;
+      border-bottom: 3px solid transparent;
+  
+      &:hover {
+        border-color: $colorSky;
+      }
+    }
+
+    .add {
+      padding-bottom: 3px;
+      border-bottom: 3px solid transparent;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import '../../../styles/variables.scss';
+
+$greyColor: #7B7B7B;
+
+@mixin sameBack ($color: #FFF) {
+  background: transparent linear-gradient(180deg, #FFFFFF00 0%, #8080801A 100%) 0% 0% no-repeat padding-box;
+  border: 1px solid #FFFFFF12;
+  border-radius: 22px;
+  opacity: 1;
+  text-align: center;
+  color: $color;    
+  font-family: $fontRaleway;
+}
+
+@mixin centerAlign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 30px 40px 20px 40px;
+  font-family: $fontRaleway;
+
+  .infoWrapper {
+    @include centerAlign;
+
+    label {
+      color: $greyColor;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    input {
+      @include sameBack();
+      height: 40px;
+      width: 100%;
+      letter-spacing: 2px;
+      font-weight: 200;
+      font-size: 18px;
+      padding: 0 10px;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+
+    button {
+      @include sameBack($greyColor);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      padding: 6px 20px;
+      cursor: pointer;
+
+      &:focus {
+        outline: 0;
+      }
+
+      &:hover {
+        border-color: #cccccc;
+        color: #cccccc;
+      }
+    }
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+
+    .socialBottom {
+      @include sameBack();
+      height: 18px;
+      width: 90%;
+      margin-top: 10px;
+    }
+
+    .imgBottom {
+      @include sameBack();
+      padding: 8px 30px;
+      margin-top: 20px;
+      letter-spacing: 1px;
+      color: #FFFFFF;
+      font-size: 10px;
+    }
+  }
+
+  .mt1 {
+    margin-top: 10px;
+  }
+}

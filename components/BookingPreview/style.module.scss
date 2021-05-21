@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+.container_top{
+    padding-top: 100px;
+    height: 100vh;
+    overflow: auto;
+}
+
+.div_align_center{
+    text-align: center;
+}
+.btnstyle{
+    background-color: #161616 !important;
+    border-right: 1px solid #262525;
+}

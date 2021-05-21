@@ -1,0 +1,45 @@
+@import '../../styles/variables.scss';
+
+.container_top{
+    padding-top: 100px;
+    height: 100vh;
+    overflow: auto;
+}
+
+.div_align_center{
+    text-align: center;
+}
+.btnstyle{
+    background-color: #161616 !important;
+    border-right: 1px solid #262525;
+    color: white;
+}
+.margingspace{
+    margin: 5%;
+}
+.justify_content{
+    justify-content: center;
+}
+.adonTableDiv {
+    display: flex;
+    justify-content: center;
+}
+.adonTable {
+    margin: 20px;
+}
+
+.tableHeading {
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
+
+.table_col {
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+}
